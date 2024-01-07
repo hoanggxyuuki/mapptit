@@ -13,7 +13,7 @@ body{
   height: 100%;
   overflow: hidden;
   display: flex;
-  background-image: url('/static/images/trangcon/bg.png');
+  background-image: url('mapptit/static/images/trangcon/bg.png');
 }
 .left-menu{
   width: 24%;
