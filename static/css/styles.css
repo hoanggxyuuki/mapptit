@@ -431,7 +431,7 @@ p {
     width: 100vw;
     color: #fff;
     font-size: 0.76em;
-    background: url('/static/images/home/bg-home.webp') no-repeat center bottom;
+    background: url('/static/images/home/bg-home.') no-repeat center bottom;
     background-size: 100vw 100vh;
 }
 
