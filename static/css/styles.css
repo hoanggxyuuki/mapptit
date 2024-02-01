@@ -147,36 +147,6 @@ strong {
 
 /*GENERAL CSS*/
 
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 0.8em;
-        background-image: none; /* Remove background image on smaller screens */
-    }
-
-    .ctn {
-        width: 100%;
-        min-width: auto;
-        margin: 0;
-        padding: 0 15px; /* Add some padding to prevent content touching the edges */
-    }
-
-    .list2Items li,
-    .list3Items li,
-    .list4Items li {
-        width: 100%;
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
-    }
-
-    .stepSlider,
-    .stepSliderDots {
-        width: 100%;
-        float: none;
-        margin-top: 20px;
-    }
-
-    .stepSliderDots h6 {
-        display: none;
-    }
 a {
     color: #fff;
     text-decoration: underline;
@@ -194,6 +164,13 @@ a:hover {
     outline: none;
 }
 
+body {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #222;
+    background: white;
+    background-image: url('../images/map/bg.png');
+}
 
 input,
 textarea,
@@ -240,6 +217,12 @@ p {
     padding-bottom: 10px;
 }
 
+.ctn {
+    width: 100%;
+    max-width: 1170px;
+    min-width: 960px;
+    margin: auto;
+}
 
 .left {
     float: left;
@@ -322,6 +305,29 @@ p {
     max-width: 100%;
 }
 
+.list2Items {}
+
+.list2Items li {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+.list3Items {}
+
+.list3Items li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+}
+
+.list4Items {}
+
+.list4Items li {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+}
 
 .alLeft {
     text-align: left;
@@ -1250,6 +1256,73 @@ ul.tabs li.current {
     display: inherit;
 }
 
+.stepTab {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+}
+
+.stepTab .tab-link {
+    font-size: 0.86em;
+    height: 36px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: #eee;
+    padding: 5px;
+    width: 1%;
+}
+
+.stepTab .tab-link.current {
+    background-image: linear-gradient(to right, #F11B53, #EE0033);
+    color: #fff;
+}
+
+.stepSlider {
+    display: inline-block;
+    width: 40%;
+    float: left;
+}
+
+.stepSliderDots {
+    display: inline-block;
+    width: 40%;
+    margin-top: 40px;
+}
+
+.stepSliderDots .owl-dot {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.stepSliderDots .owl-dot span {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+    margin: 0px 5px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 40px;
+    font-size: 1.4em;
+    float: left;
+    text-align: center;
+}
+
+.stepSliderDots .owl-dot h6 {
+    display: table-cell;
+    padding-left: 20px;
+}
+
+.stepSliderDots .owl-dot.active span {
+    background-image: linear-gradient(to right, #F11B53, #EE0033);
+    color: #fff;
+}
 
 .tet2019 {
     position: fixed;
