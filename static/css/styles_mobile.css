@@ -1178,21 +1178,19 @@ footer a:hover {
 .newsItem a:hover {
     text-decoration: underline;
 }
-
 .newsSlider {
-    width: 327px;
-    height: auto;
-    overflow: hidden;
-    position: absolute;
-    margin-left: 89px;
-    margin-top: 49px;
-}
-
-.newsSlider .owl-nav.disabled+.owl-dots {
-    margin-top: -30px;
-    position: relative;
-}
-
+    width: 100%; /* Thay đổi kích thước slide để nó phù hợp với màn hình điện thoại */
+    margin: 0 auto; /* Đặt margin là auto để căn giữa slide */
+    position: relative; /* Đặt vị trí slide là relative */
+    top: 0; /* Đặt top là 0 để đảm bảo slide không bị dịch chuyển */
+    left: 0; /* Đặt left là 0 để đảm bảo slide không bị dịch chuyển */
+  }
+  .newsSlider .owl-nav.disabled + .owl-dots {
+    margin-top: 10px; /* Điều chỉnh khoảng cách từ trên xuống */
+    position: absolute; /* Đặt vị trí là absolute để điều chỉnh vị trí */
+    bottom: 0; /* Đặt bottom là 0 để đưa chúng lên phía dưới slide */
+  }
+  
 .svLogin .loginBox {
     width: 400px;
     margin: auto;
@@ -1701,85 +1699,115 @@ ul.tabs li.current {
     }
   
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-  @media screen  and (max-width:1599px) {
-    #news{
-        width: 400px;
-    }
-    .newsSlider {
-        width: 261px ;
-        margin-top:40px;
-        margin-left: 72px;
-    }
-    .slider-map{
-        width: 261px !important;
-    }
-    .slider-map{
-        width: 327px;
-    }
-    #bg-menu{
-        width: 226px;
-        height: 300px;
-    }
-    .left-menu-map {
-        position: absolute;
-        margin-top: 40px;
-        margin-left: 18px;
-        margin-right: 18px;
-        width: 190px;
-    }
-    .container-menu {
-        grid-template-columns: 185px;
-        grid-template-rows: 45px 45px 45px 45px;
-        grid-row-gap: 12px;
-    }
-    .icon-in-menu{
-        width: 18px;
-        height: auto;
-    }
-    .child-contain-menu{
-        display:grid;
-        grid-template-columns: 26px auto 16px;
-        grid-column-gap:6px;
-        align-items: center;
-    }
-    .child-contain-chil-menu{
-        display:grid;
-        grid-template-columns: 26px auto;
-        grid-column-gap:6px;
-        align-items: center;
-    }
-    .icon-child-menu {
-        margin-left: 6px;
-    }
-    .content-child-menu {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .content-child-trangcon:hover {
-        color:  #E23C47;
-    }
-    .content-child-trangcon{
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .content-bottom {
-        margin-top: 10px;
-        height: 200px;
-    }
-    .container-bottom {
-        height: 39px;
-    }
-    .content-text {
-        height: 34px;
-        font-size: 14px;
-        line-height: 18px;
-        color: #7988A4;
-    }
-
-
-  }
+    @media screen and (max-width: 1599px) {
+        #news {
+          width: 100%;
+          max-width: 400px;
+          /* Điều chỉnh kích thước cho phần tử #news */
+        }
+      
+        .newsSlider {
+          width: 100%;
+          max-width: 261px;
+          margin-top: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          /* Điều chỉnh kích thước và căn giữa cho .newsSlider */
+        }
+      
+        .slider-map {
+          width: 100% !important;
+          max-width: 327px;
+          /* Điều chỉnh kích thước cho .slider-map */
+        }
+      
+        #bg-menu {
+          width: 100%;
+          max-width: 226px;
+          height: auto;
+          /* Điều chỉnh kích thước cho #bg-menu */
+        }
+      
+        .left-menu-map {
+          position: relative;
+          margin-top: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 190px;
+          /* Điều chỉnh kích thước và căn giữa cho .left-menu-map */
+        }
+      
+        .container-menu {
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          grid-row-gap: 12px;
+          /* Điều chỉnh kích thước cho .container-menu */
+        }
+      
+        .icon-in-menu {
+          width: 18px;
+          height: auto;
+          /* Điều chỉnh kích thước cho .icon-in-menu */
+        }
+      
+        .child-contain-menu {
+          display: grid;
+          grid-template-columns: 26px auto 16px;
+          grid-column-gap: 6px;
+          align-items: center;
+          /* Điều chỉnh kích thước và căn giữa cho .child-contain-menu */
+        }
+      
+        .child-contain-chil-menu {
+          display: grid;
+          grid-template-columns: 26px auto;
+          grid-column-gap: 6px;
+          align-items: center;
+          /* Điều chỉnh kích thước và căn giữa cho .child-contain-chil-menu */
+        }
+      
+        .icon-child-menu {
+          margin-left: 6px;
+          /* Điều chỉnh vị trí cho .icon-child-menu */
+        }
+      
+        .content-child-menu {
+          font-size: 14px;
+          line-height: 20px;
+          /* Điều chỉnh kích thước cho .content-child-menu */
+        }
+      
+        .content-child-trangcon:hover {
+          color: #E23C47;
+          /* Điều chỉnh màu sắc khi hover cho .content-child-trangcon */
+        }
+      
+        .content-child-trangcon {
+          font-size: 14px;
+          line-height: 20px;
+          /* Điều chỉnh kích thước cho .content-child-trangcon */
+        }
+      
+        .content-bottom {
+          margin-top: 10px;
+          height: auto;
+          /* Điều chỉnh kích thước cho .content-bottom */
+        }
+      
+        .container-bottom {
+          height: auto;
+          /* Điều chỉnh kích thước cho .container-bottom */
+        }
+      
+        .content-text {
+          height: auto;
+          font-size: 14px;
+          line-height: 18px;
+          color: #7988A4;
+          /* Điều chỉnh kích thước cho .content-text */
+        }
+      }
 
 
 
