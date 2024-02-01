@@ -1721,10 +1721,11 @@ ul.tabs li.current {
     #bg-menu{
         width: 226px;
         height: 300px;
+        margin-top: 300px;
     }
     .left-menu-map {
         position: absolute;
-        margin-top: 40px;
+        margin-top: auto;
         margin-left: 18px;
         margin-right: 18px;
         width: 190px;
@@ -1733,10 +1734,12 @@ ul.tabs li.current {
         grid-template-columns: 185px;
         grid-template-rows: 45px 45px 45px 45px;
         grid-row-gap: 12px;
+        margin-top: 300px;
     }
     .icon-in-menu{
         width: 18px;
         height: auto;
+        margin-top: auto;
     }
     .child-contain-menu{
         display:grid;
