@@ -1783,7 +1783,7 @@ ul.tabs li.current {
 
 
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 749px) {
     #news {
       width: 100%;
       max-width: 400px;
@@ -1807,37 +1807,29 @@ ul.tabs li.current {
       /* Điều chỉnh kích thước cho .slider-map */
     }
   
-    #bg-menu {
-      width: 100%;
-      max-width: 226px;
-      height: auto;
-      top:200px;
-      /* Điều chỉnh kích thước cho #bg-menu */
+    #bg-menu{
+        width: 226px;
+        height: 300px;
+        margin-top: 300px;
     }
-  
     .left-menu-map {
-      position: relative;
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      max-width: 190px;
-      /* Điều chỉnh kích thước và căn giữa cho .left-menu-map */
+        position: absolute;
+        margin-top: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        width: 190px;
     }
-  
     .container-menu {
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      grid-row-gap: 12px;
-      /* Điều chỉnh kích thước cho .container-menu */
+        grid-template-columns: 185px;
+        grid-template-rows: 45px 45px 45px 45px;
+        grid-row-gap: 12px;
+        margin-top: 300px;
     }
-  
-    .icon-in-menu {
-      width: 18px;
-      height: auto;
-      /* Điều chỉnh kích thước cho .icon-in-menu */
+    .icon-in-menu{
+        width: 18px;
+        height: auto;
+        margin-top: auto;
     }
-  
     .child-contain-menu {
       display: grid;
       grid-template-columns: 26px auto 16px;
